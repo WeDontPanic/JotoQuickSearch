@@ -34,32 +34,42 @@ window.addEventListener('keydown',
     },
 false);
 
+// Copies the currently highlighted text respecting shadowRoot elements
 function getHighlightedText() {
+	// Get the current selection
     var range = window.getSelection().getRangeAt(0);
     var ancestor = range.commonAncestorContainer;
     
+	// Selection only affects a single element
     if (ancestor.childNodes.length == 0) {
         var endTxt = "";
         
+		// If the selection ends with an element instead of text
 		if (range.endContainer.textContent.length == range.endOffset) {
 			endTxt = testShadowRootAndGetContent(range.endContainer.nextSibling, true);
 		}
 		
+		// Return the text
         return ancestor.textContent.substr(0, range.endOffset).substr(range.startOffset) + endTxt;
     }
     
+	// Selection affects multiple elements
     return getContentBetweenElements(ancestor.childNodes, range.startContainer, range.endContainer, range.startOffset, range.endOffset).replace(/\s\s+/g, ' ');    
 }
 
+// Copies the entire text between two elements respecting shadowRoot and offsets
 function getContentBetweenElements(nodeList, startElement, endElement, startOffset, endOffset) {
     var text = "";
     
+	// Iterate the list with "some" so it can be interrupted
     Array.from(nodeList).some((e, i) => {
 
+		// Ignore Nodes like comments and stuff
         if (!j_copyNodeTypes.includes(e.nodeType)) {
             return;
         }
 
+		// Check where the current element is positioned
         let startCompare = startElement.compareDocumentPosition(e);
         let endCompare = endElement.compareDocumentPosition(e);
 	   
@@ -74,7 +84,7 @@ function getContentBetweenElements(nodeList, startElement, endElement, startOffs
 			text += testShadowRootAndGetContent(endElement.nextSibling, true);
 		}
 		
-		// startElement is a text node
+		// startElement is a text node: Iterate until the end respecting the elements relative position
         if (startCompare == 0) {
             text += e.textContent.substr(startOffset);
         }
@@ -92,6 +102,7 @@ function getContentBetweenElements(nodeList, startElement, endElement, startOffs
     return text;
 }
 
+// Copies the whole content of an element
 function getContent(nodeList) {
     let text = "";
     
@@ -102,6 +113,7 @@ function getContent(nodeList) {
     return text;
 }
 
+// Copies the whole content of an element respecting shadowRoot
 function testShadowRootAndGetContent(e, hasChildren) {
 	let text = "";
 	
