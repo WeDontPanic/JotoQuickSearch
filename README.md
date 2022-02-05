@@ -3,8 +3,7 @@ This tool is a extension for Chromium based web browsers. Press the assigned Hot
 Copying unknown words, opening a new tab and pasting the selection can be done much quicker now!
 
 # What is "Jotoba?"
-Jotoba is a free online, selfhostable, multi-language japanese dictionary based on lots of various free resources. Learn more [here](https://github.com/WeDontPanic/Jotoba/).<br>
-Public instance: [jotoba.de](https://jotoba.de)<br>
+Jotoba is a free online, selfhostable, multi-language japanese dictionary based on lots of various free resources. Learn more [here](https://github.com/WeDontPanic/Jotoba/).
 
 # Why not just use Yomichan?
 Jotoba can provide a lot more detailed informations and be sometimes the preferred method to find out what a word means or how it can be used. Furthermode Yomichan doesn't support other extensions like [Toucan](https://jointoucan.com/).
