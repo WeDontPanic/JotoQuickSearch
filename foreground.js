@@ -1,6 +1,6 @@
 // Settings
-const j_key = "j", j_useShift = false, j_useCtrl = false, j_useAlt = true;
-const j_copyNodeTypes = [Node.ELEMENT_NODE, Node.TEXT_NODE];
+var j_key = "j", j_useShift = false, j_useCtrl = false, j_useAlt = true;
+var j_copyNodeTypes = [Node.ELEMENT_NODE, Node.TEXT_NODE];
 
 // Keep track of pressed / released keys
 var keys = [];
