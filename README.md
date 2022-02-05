@@ -6,7 +6,7 @@ Copying unknown words, opening a new tab and pasting the selection can be done m
 Jotoba is a free online, selfhostable, multi-language japanese dictionary based on lots of various free resources. Learn more [here](https://github.com/WeDontPanic/Jotoba/).
 
 # Why not just use Yomichan?
-Jotoba can provide a lot more detailed informations and be sometimes the preferred method to find out what a word means or how it can be used. Furthermode Yomichan doesn't support other extensions like [Toucan](https://jointoucan.com/).
+Jotoba can provide a lot more detailed informations and be sometimes the preferred method to find out what a word means or how it can be used. Furthermode, Yomichan doesn't support other extensions like [Toucan](https://jointoucan.com/).
 
 # Installation 
 Download the plugin from the [Release Tab](https://github.com/WeDontPanic/JotoQuickSearch/releases/)
