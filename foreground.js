@@ -1,6 +1,7 @@
 // Settings
 var j_key = "j", j_useShift = false, j_useCtrl = false, j_useAlt = true;
 var j_copyNodeTypes = [Node.ELEMENT_NODE, Node.TEXT_NODE];
+var j_ignoreNodeTags = ["SCRIPT", "STYLE", "META", "TITLE", "LINK"];
 
 // Keep track of pressed / released keys
 var keys = [];
@@ -45,7 +46,7 @@ function getHighlightedText() {
         var endTxt = "";
         
 		// If the selection ends with an element instead of text
-		if (range.endContainer.textContent.length == range.endOffset) {
+		if (range.endContainer.textContent.length == range.endOffset && range.endContainer.nextSibling != null) {
 			endTxt = testShadowRootAndGetContent(range.endContainer.nextSibling, true);
 		}
 		
@@ -65,7 +66,7 @@ function getContentBetweenElements(nodeList, startElement, endElement, startOffs
     Array.from(nodeList).some((e, i) => {
 
 		// Ignore Nodes like comments and stuff
-        if (!j_copyNodeTypes.includes(e.nodeType)) {
+        if (!j_copyNodeTypes.includes(e.nodeType) || j_ignoreNodeTags.includes(e.tagName)) {
             return;
         }
 
