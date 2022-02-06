@@ -108,6 +108,12 @@ function getContent(nodeList) {
     let text = "";
     
     nodeList.forEach((e, i) => {
+		// Ignore Nodes like comments and stuff
+        if (!j_copyNodeTypes.includes(e.nodeType) || j_ignoreNodeTags.includes(e.tagName)) {
+            return;
+        }
+		
+		// Add others
         text += e.textContent
     });
 
