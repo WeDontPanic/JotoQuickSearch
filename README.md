@@ -1,6 +1,8 @@
 # JotoQuickSearch <img class="titleImg" width="30" src="/icon/128px.png">
 This tool is a extension for Chromium based web browsers. Press the assigned Hotkey (default: ```Alt + J```) to instantly search for selected texts.<br>
 Copying unknown words, opening a new tab and pasting the selection can be done much quicker now!
+<br><br>
+Note that this extension is not under active development and may have some bugs.
 
 # What is "[Jotoba](https://jotoba.de)?"
 Jotoba is a free online, selfhostable, multi-language japanese dictionary based on lots of various free resources. Learn more [here](https://github.com/WeDontPanic/Jotoba/).
