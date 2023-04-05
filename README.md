@@ -13,7 +13,7 @@ Visit the browser's plugin page. <b>A few examples:</b> <br>
 Chrome:<br> ```chrome://extensions/``` <br>
 Brave: <br> ```brave://extensions/``` <br>
 <br>
-Next, enable developer mode in the top right corner and Drag & Drop the Plugin into the Browser, allowing the installation.
+Next, enable developer mode in the top right corner and select "Load unpacked" in the top left corner afterwards. Select the JotoQuickSearch's directory and allow the installation.
 <br><br>
 <b>Alternatively</b><br>
 Download the source code, open the plugin page, enter the developer mode and load the source code as <b>load unpacked</b>.
