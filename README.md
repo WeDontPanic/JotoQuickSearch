@@ -18,9 +18,6 @@ Next, enable developer mode in the top right corner and select "Load unpacked" i
 <b>Alternatively</b><br>
 Download the source code, open the plugin page, enter the developer mode and load the source code as <b>load unpacked</b>.
 
-# Usage
-Select any text and press CTRL + J
-
 # License
 JotoQuickSearch itself is licensed under AGPL 3.0 or later. 
 Please refer to the [license file](https://github.com/WeDontPanic/JotoQuickSearch/blob/master/LICENSE) for further information.
