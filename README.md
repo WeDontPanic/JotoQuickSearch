@@ -5,9 +5,6 @@ Copying unknown words, opening a new tab and pasting the selection can be done m
 # What is "[Jotoba](https://jotoba.de)?"
 Jotoba is a free online, selfhostable, multi-language japanese dictionary based on lots of various free resources. Learn more [here](https://github.com/WeDontPanic/Jotoba/).
 
-# Why not just use Yomichan?
-Jotoba provides a lot more detailed informations and can sometimes be the preferred method to find out what a word means or how it can be used. Furthermode, Yomichan doesn't support other extensions like [Toucan](https://jointoucan.com/).
-
 # Installation 
 Download the plugin from the [Release Tab](https://github.com/WeDontPanic/JotoQuickSearch/releases/)
 <br>
@@ -20,6 +17,9 @@ Drag & Drop the Plugin into the Browser and allow the installation.
 <br><br>
 <b>Alternatively</b><br>
 Download the source code, open the plugin page, enter the developer mode and load the source code as <b>load unpacked</b>.
+
+# Usage
+Select any text and press CTRL + J
 
 # License
 JotoQuickSearch itself is licensed under AGPL 3.0 or later. 
