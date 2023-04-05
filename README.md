@@ -6,14 +6,14 @@ Copying unknown words, opening a new tab and pasting the selection can be done m
 Jotoba is a free online, selfhostable, multi-language japanese dictionary based on lots of various free resources. Learn more [here](https://github.com/WeDontPanic/Jotoba/).
 
 # Installation 
-Download the plugin from the [Release Tab](https://github.com/WeDontPanic/JotoQuickSearch/releases/)
+Download the plugin from the [Release Tab](https://github.com/WeDontPanic/JotoQuickSearch/releases/) and unpack it.
 <br>
 <br>
 Visit the browser's plugin page. <b>A few examples:</b> <br>
 Chrome:<br> ```chrome://extensions/``` <br>
 Brave: <br> ```brave://extensions/``` <br>
 <br>
-Drag & Drop the Plugin into the Browser and allow the installation.
+Next, enable developer mode in the top right corner and Drag & Drop the Plugin into the Browser, allowing the installation.
 <br><br>
 <b>Alternatively</b><br>
 Download the source code, open the plugin page, enter the developer mode and load the source code as <b>load unpacked</b>.
